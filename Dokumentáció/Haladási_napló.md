@@ -1,6 +1,6 @@
-***Haladási napló***
+# Haladási napló
 
-*Első hét*
+### Első hét
 
 Az elmúlt héten leginkáb azzal voltam elfoglalva, hogy a témába beleássam magam. 
 Megnéztem a gyorstalpaló kurzus első két heti anyagát, illetve olvasgattam a témában
@@ -26,3 +26,29 @@ Reményeim szerint a jövőhét folyamán megtalálom a megfelelő transformer a
 
 Elkezdtem megírni a specifikációmat is, az LLM leírása már fent van a githubon.
 Az önlab keretein belül a megbeszélteknek megfelelően elsősorban erre koncetrálnék.
+
+### Második hét
+
+Az előző alkalom óta elkezdtem kísérletezgetni LLM-ekkel, megcsináltam több tutorialt is,
+szereztem némi gyakorlati tapasztalatot fine-tune-olásban. 
+
+Mivel számomra teljesen új maga a python nyelv is, utána kellett néznem több esetben 
+a szintaxisnak, illetve több library működésének: pandas, numpy, datasets, evaluate.
+
+Traineléshez kipróbáltam a tensorflowt, illetve a pytorchot is. Egyelőre a pytorch tűnik számomra szimpatikusabbnak,
+mivel lehetőség van nativ tuneolásra.
+
+Megismerkedtem az adatok preprocesszálásához használt eszközökkel, mint a padding, trucation, tokenization, mapping.
+Kezd összeállni a kép, hogy hogyan is kell elképzelni egy modell fine-tune-olását, azonban még messze a cél.
+Egyre inkább látom, hogy valóban vannak mélységei ennek a témának, és nem olyan egyszerű ez a gyakorlatban, 
+mint ahogy azt én az elején elképzeltem. 
+
+Beszéltünk róla az első héten, hogy Szerinted érdemes lenne vscode-ot használni a fejlesztéshez, 
+azonban egyelőre még nem találtam meg a megfelelő setupot hozzá.
+Probálkoztam az egyik tutorialban említett unweave-vel, mivel jelenleg nem áll rendelkezésemre egyetlen gpu sem, 
+azonban ez valamiert nem működött. Így a példa-kódokat egyelőre csak google colabban tudtam futtatni.
+Amennyiben Te rendelkezel gyakorlattal az unweave használatában, elfogadnék benne némi segítséget... 
+Az egészhez még kicsit hozzátartozik, hogy vasárnap végül elegem lett a windowsból, és azóta az ubuntus közösséget gyarapítom. :)
+
+Ma még utána fogok nézni, hogy az egyes modelleket fine-tuneolás után hogyan lehet lementeni, 
+majd egy másik alkalmazásban felhasználni.  
