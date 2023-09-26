@@ -52,3 +52,27 @@ Az egészhez még kicsit hozzátartozik, hogy vasárnap végül elegem lett a wi
 
 Ma még utána fogok nézni, hogy az egyes modelleket fine-tuneolás után hogyan lehet lementeni, 
 majd egy másik alkalmazásban felhasználni.  
+
+### Harmadik hét
+
+Ezen a héten elkezdtem összeállítani a promptok formátumát, amit később a fine-tuneoláshoz használni fogok.
+Ehhez elsősorban a chatgpt-vel kísérletezgettem, one-shot után pedig már tök jó eredményeket kaptam.
+Csináltam few-shotot is, azzal már az ismeretlen feladatok is egészen helyesen lettek pontozva.
+
+Ezután elkezdtem más modellekkel is kísérletezni huggingfacen:
+
+    - google/flan-t5-base/xxl --> a base verzióval nem kaptam eredményeket, xxl-el már volt output, közelítőleg helyes.
+    - bert-base-uncased / xlm-roberta-base / roberta-->  volt output, egészen jó. xlm-roberta tud magyarul is.
+    - gpt2 --> nem volt output
+
+Az eddigi próbálkozások alapján a (encoder-only) Bert alapú modellek a legjobbak. Kíváncsi vagyok, ha 
+rendelkezem majd nagyobb adathalmazzal melyik hogyan fog teljesíteni. Az eddig használt adatok megtalálhatók githubon 
+a data.json fájlban, illetve a átláthatobb formátumban az example fájlokban is.
+
+A mai nap folyamán szeretném még a githubra már feltöltött jegyzetfüzetet befejezni, és legalább a flan-t5-ön lefuttatni a 
+traininget. 
+
+Ezen kívül ezen a héten különösebb kérdés nem merült fel bennem, a következő lépések is tiszták számomra. Cél lehet jövőhétig a 
+bert típusú, és a flan-t5 modellek tesztelése (), esetleg egy gradio tesztfelület elkészítése is hozzá. Ezzel együtt tovább bővíteném
+a datasetet is, első lépésbe angol nyelvű, később akár a xlm-bert model számára magyar nyelvű kérdésekkel is. 
+

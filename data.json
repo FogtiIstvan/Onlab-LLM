@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the difference between malloc() and new in C++.",
+        "maximum_score": 6,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically."
+            },
+            {
+                "point": 2,
+                "criteria": "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete."
+            },
+            {
+                "point": 2,
+                "criteria": "new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting."
+            }
+        ],
+        "answer": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. new not only allocates memory but also calls the constructor for an object. Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete. Additionally, new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "score": 6 
+
+    },
+    {
+        "id": 2,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the difference between malloc() and new in C++.",
+        "maximum_score": 6,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically."
+            },
+            {
+                "point": 2,
+                "criteria": "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete."
+            },
+            {
+                "point": 2,
+                "criteria": "new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting."
+            }
+        ],
+        "answer": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. Additionally, new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "score": 4
+
+    },
+    {
+        "id": 3,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the difference between malloc() and new in C++.",
+        "maximum_score": 6,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically."
+            },
+            {
+                "point": 2,
+                "criteria": "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete."
+            },
+            {
+                "point": 2,
+                "criteria": "new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting."
+            }
+        ],
+        "answer": "After calling malloc(), free() must be also called. malloc() returns a void pointer, that requires explicit type casting. new is type-safe.",
+        "score": 2 
+
+    },
+    {
+        "id": 4,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the difference between malloc() and new in C++.",
+        "maximum_score": 6,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically."
+            },
+            {
+                "point": 2,
+                "criteria": "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete."
+            },
+            {
+                "point": 2,
+                "criteria": "new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting."
+            }
+        ],
+        "answer": "The memory allocated with new must be deallocated with delete.",
+        "score": 0
+
+    },
+    {
+        "id": 5,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'const' keyword in C++? Provide examples.",
+        "maximum_score": 3,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "The 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized."
+            },
+            {
+                "point": 1,
+                "criteria": "Example"
+            }
+        ],
+        "answer": "The 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized.",
+        "score": 2
+
+    },
+    {
+        "id": 6,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'const' keyword in C++? Provide examples.",
+        "maximum_score": 3,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "The 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized."
+            },
+            {
+                "point": 1,
+                "criteria": "Example"
+            }
+        ],
+        "answer": "The 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized. For instance, const int x = 5; declares a constant integer 'x' with the value 5. You cannot change the value of 'x' later in the program. It is often used to create immutable data or to ensure that function parameters do not get modified.",
+        "score": 2
+
+    }
+]
