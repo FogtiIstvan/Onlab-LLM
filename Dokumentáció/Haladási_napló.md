@@ -1,6 +1,6 @@
 # Haladási napló
 
-### Első hét
+## Első hét
 
 Az elmúlt héten leginkáb azzal voltam elfoglalva, hogy a témába beleássam magam. 
 Megnéztem a gyorstalpaló kurzus első két heti anyagát, illetve olvasgattam a témában
@@ -27,7 +27,7 @@ Reményeim szerint a jövőhét folyamán megtalálom a megfelelő transformer a
 Elkezdtem megírni a specifikációmat is, az LLM leírása már fent van a githubon.
 Az önlab keretein belül a megbeszélteknek megfelelően elsősorban erre koncetrálnék.
 
-### Második hét
+## Második hét
 
 Az előző alkalom óta elkezdtem kísérletezgetni LLM-ekkel, megcsináltam több tutorialt is,
 szereztem némi gyakorlati tapasztalatot fine-tune-olásban. 
@@ -53,7 +53,7 @@ Az egészhez még kicsit hozzátartozik, hogy vasárnap végül elegem lett a wi
 Ma még utána fogok nézni, hogy az egyes modelleket fine-tuneolás után hogyan lehet lementeni, 
 majd egy másik alkalmazásban felhasználni.  
 
-### Harmadik hét
+## Harmadik hét
 
 Ezen a héten elkezdtem összeállítani a promptok formátumát, amit később a fine-tuneoláshoz használni fogok.
 Ehhez elsősorban a chatgpt-vel kísérletezgettem, one-shot után pedig már tök jó eredményeket kaptam.
@@ -75,4 +75,35 @@ traininget.
 Ezen kívül ezen a héten különösebb kérdés nem merült fel bennem, a következő lépések is tiszták számomra. Cél lehet jövőhétig a 
 bert típusú, és a flan-t5 modellek tesztelése (), esetleg egy gradio tesztfelület elkészítése is hozzá. Ezzel együtt tovább bővíteném
 a datasetet is, első lépésbe angol nyelvű, később akár a xlm-bert model számára magyar nyelvű kérdésekkel is. 
+
+## Negyedik hét
+
+Elmaradt
+
+## Ötödik hét
+
+Ezen a héten már tényleg sokat kísérletezgettem a modellekkel, első sorban a flan-t5, illetve a bert alapú modellek
+fine-tuneolásával.
+Jelen állás szerint a modell feladata egyszerűen osztályozni, azaz egy pontszámot adni a válaszra,
+a megadott kérdés, illetve pontozási útmutató kontextusában.
+
+### prompts_flan_t5_base.ipynb
+
+Ebben a fájlban játszadoztam az adatok preprocesszálásával. Elkészült a tokenize függvény, amit a későbbiekben is hazsnálni fogok.
+A base modellen kívül kipróbáltam a large modellt is, az xl már ahhoz is túl nagy volt, hogy letöltsem, pontosabban nagyon sokáig tartott volna.
+A base modell egyébként egész jó válaszokat adott, full fine-tune után 49%os volt a hibafüggvény.
+
+### prompts_bert_based.ipynb, roberta_fine_tune.ipynb
+
+Ezután kísérletezgettem a Bert alapú modellekkel is. A sima bert nem igazán működött jól,
+még azt sem találta el, hogy számjegynek kellene lennie a scorenak.
+A roberta ehhez képest egész jól teljesített, meg is próbáltam fine-tuneolni, azonban nem jártam sikerrel:
+"TypeError: RobertaModel.forward() got an unexpected keyword argument 'labels'"
+Több próbálkozás, és hibaüzenet után idáig jutottam el, azonban ennél már feladtam, és úgy döntöttem mepróbálkozom a flan-t5 large modelljének peftes tuneolásával
+(https://hackernoon.com/fine-tuning-roberta-for-topic-classification)
+
+### flan_t5_large_peft.ipynb
+
+Ebben a fájlban találhatók az ehhez kapcsolódó próbálkozásaim, ami szintén nem járt sikerrel. Valamilyen oknál fogva
+a google colab mindig úgy döntött, hogy összeomlik trainelésnél, még akkor is, ha csak a base modellel próbálkoztam.
 
