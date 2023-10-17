@@ -71,6 +71,398 @@
     {
         "id": 4,
         "task": "Rate the answer to the question.",
+        "question": "What is the difference between pass by value and pass by reference in C++?",
+        "maximum_score": 8,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "Pass by value involves copying the actual value of a variable to a function parameter, while pass by reference passes a reference to the original variable."
+            },
+            {
+                "point": 2,
+                "criteria": "Pass by value is more memory-intensive as it creates a copy, while pass by reference is more efficient in terms of memory usage."
+            },
+            {
+                "point": 2,
+                "criteria": "Changes made to a parameter in pass by reference affect the original variable, while changes in pass by value do not affect the original."
+            },
+            {
+                "point": 2,
+                "criteria": "In C++, pass by reference is often achieved using references or pointers."
+            }
+        ],
+        "answer": "Pass by value involves copying the actual value of a variable to a function parameter, creating a separate copy. Pass by reference, on the other hand, passes a reference to the original variable, which means changes made to the parameter affect the original variable. Pass by value is more memory-intensive due to the copy, while pass by reference is memory-efficient. In C++, pass by reference is often achieved using references or pointers.",
+        "score": 8
+    },
+    {
+        "id": 5,
+        "task": "Rate the answer to the question.",
+        "question": "What are the differences between C and C++?",
+        "maximum_score": 10,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "C++ is an extension of C and includes all features of the C language."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ supports object-oriented programming with features like classes, inheritance, and polymorphism, which C does not have."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ provides a standard library (STL) that includes various data structures and algorithms, whereas C relies more on external libraries."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ introduces features like function overloading, operator overloading, and exception handling, which are not present in C."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ code can be more complex due to its additional features and object-oriented nature."
+            }
+        ],
+        "answer": "C++ is an extension of C and includes all the features of the C language. However, C++ goes beyond C by supporting object-oriented programming with classes, inheritance, and polymorphism. It provides a standard library (STL) with various data structures and algorithms, while C often relies on external libraries. C++ also introduces features like function overloading, operator overloading, and exception handling, which are not present in C. As a result, C++ code can be more complex due to its additional features and object-oriented nature.",
+        "score": 10
+    },
+    {
+        "id": 6,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'const' keyword in C++?",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'const' keyword is used to indicate that a variable's value should not be modified after it is initialized."
+            },
+            {
+                "point": 2,
+                "criteria": "In C++, 'const' can be applied to variables, function parameters, and member functions, and it enforces immutability."
+            }
+        ],
+        "answer": "The 'const' keyword in C++ is used to indicate that a variable's value should not be modified after it is initialized. It can be applied to variables, function parameters, and member functions, and it enforces immutability.",
+        "score": 4
+    },
+    {
+        "id": 7,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the concept of function overloading in C++.",
+        "maximum_score": 8,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "Function overloading allows multiple functions with the same name in a class, but with different parameters or parameter types."
+            },
+            {
+                "point": 2,
+                "criteria": "The compiler selects the appropriate function to call based on the number and types of arguments provided."
+            },
+            {
+                "point": 2,
+                "criteria": "Function overloading simplifies code by providing a single function name for similar operations."
+            },
+            {
+                "point": 2,
+                "criteria": "Function overloading is a form of compile-time polymorphism in C++."
+            }
+        ],
+        "answer": "Function overloading in C++ allows you to have multiple functions in a class with the same name but different parameters or parameter types. The compiler selects the appropriate function to call based on the number and types of arguments provided. This simplifies code by providing a single function name for similar operations and is a form of compile-time polymorphism in C++.",
+        "score": 8
+    },
+    {
+        "id": 8,
+        "task": "Rate the answer to the question.",
+        "question": "What is a constructor in C++?",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "A constructor is a special member function used to initialize objects of a class."
+            },
+            {
+                "point": 2,
+                "criteria": "Constructors have the same name as the class and do not have a return type."
+            },
+            {
+                "point": 2,
+                "criteria": "Constructors are automatically called when an object is created."
+            }
+        ],
+        "answer": "A constructor in C++ is a special member function used to initialize objects of a class. Constructors have the same name as the class and do not have a return type. They are automatically called when an object is created, ensuring that the object is properly initialized.",
+        "score": 6
+    },
+    {
+        "id": 9,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the use of 'nullptr' in C++.",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "'nullptr' is a keyword introduced in C++11 to represent a null pointer."
+            },
+            {
+                "point": 2,
+                "criteria": "It is safer to use 'nullptr' than the older 'NULL' or '0' for null pointer values."
+            }
+        ],
+        "answer": "'nullptr' is a keyword introduced in C++11 to represent a null pointer. It is safer to use 'nullptr' than the older 'NULL' or '0' for null pointer values, as it helps prevent certain types of bugs related to pointer manipulation.",
+        "score": 4
+    },
+    {
+        "id": 10,
+        "task": "Rate the answer to the question.",
+        "question": "What is a template in C++?",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "A template is a feature in C++ that allows you to create generic functions and classes."
+            },
+            {
+                "point": 2,
+                "criteria": "Templates enable the use of generic types, making code more flexible and reusable."
+            },
+            {
+                "point": 2,
+                "criteria": "Templates are instantiated with specific types when used, and the C++ compiler generates code for each instantiation."
+            }
+        ],
+        "answer": "A template in C++ is a feature that allows you to create generic functions and classes. Templates enable the use of generic types, making code more flexible and reusable. When templates are used, they are instantiated with specific types, and the C++ compiler generates code for each instantiation.",
+        "score": 6
+    },
+    {
+        "id": 11,
+        "task": "Rate the answer to the question.",
+        "question": "What is RAII in C++?",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "RAII stands for Resource Acquisition Is Initialization."
+            },
+            {
+                "point": 2,
+                "criteria": "In C++, RAII is a programming idiom that ties the lifetime of a resource to the scope of an object."
+            }
+        ],
+        "answer": "RAII stands for Resource Acquisition Is Initialization. In C++, RAII is a programming idiom that ties the lifetime of a resource to the scope of an object. This ensures that resources, such as memory or file handles, are properly managed and automatically released when the object goes out of scope.",
+        "score": 4
+    },
+    {
+        "id": 12,
+        "task": "Rate the answer to the question.",
+        "question": "What is the 'virtual' keyword used for in C++?",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'virtual' keyword is used in C++ to declare a member function as virtual in a base class."
+            },
+            {
+                "point": 2,
+                "criteria": "Virtual functions allow dynamic binding, enabling polymorphism and overriding in derived classes."
+            }
+        ],
+        "answer": "The 'virtual' keyword is used in C++ to declare a member function as virtual in a base class. Virtual functions allow dynamic binding, which enables polymorphism and allows derived classes to override the function with their own implementations.",
+        "score": 4
+    },
+    {
+        "id": 13,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the concept of inheritance in C++.",
+        "maximum_score": 8,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "Inheritance is a fundamental concept in C++ that allows a class to inherit attributes and methods from another class."
+            },
+            {
+                "point": 2,
+                "criteria": "The class that inherits from another is called a derived class or subclass, while the class being inherited from is called the base class or superclass."
+            },
+            {
+                "point": 2,
+                "criteria": "Inheritance promotes code reuse, as derived classes can access the members of the base class and extend or override them."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ supports multiple inheritance, where a class can inherit from more than one base class."
+            }
+        ],
+        "answer": "Whaat??",
+        "score": 0
+    },
+    {
+        "id": 14,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'try-catch' block in C++?",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'try-catch' block is used in C++ for exception handling."
+            },
+            {
+                "point": 2,
+                "criteria": "In a 'try' block, you write code that might throw an exception, and in the 'catch' block, you specify how to handle the exception."
+            },
+            {
+                "point": 2,
+                "criteria": "Exception handling helps make code more robust by gracefully handling errors and preventing program crashes."
+            }
+        ],
+        "answer": "The 'try-catch' block is used in C++ for exception handling. Exception handling helps make code more robust by gracefully handling errors and preventing program crashes.",
+        "score": 4
+    },
+    {
+        "id": 15,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'friend' keyword in C++?",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'friend' keyword in C++ is used to grant a function or class access to the private and protected members of another class."
+            },
+            {
+                "point": 2,
+                "criteria": "It can be helpful when you need to create functions or classes that need special access to the internals of a class but should not be part of the class itself."
+            }
+        ],
+        "answer": "The 'friend' keyword in C++ is used to grant a function or class access to the private and protected members of another class. .",
+        "score": 2
+    },
+    {
+        "id": 16,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the purpose of the 'const' qualifier in C++.",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'const' qualifier is used to indicate that a variable is read-only and cannot be modified after its initial assignment."
+            },
+            {
+                "point": 2,
+                "criteria": "It is often applied to function parameters to ensure that the function does not modify them."
+            },
+            {
+                "point": 2,
+                "criteria": "Using 'const' helps prevent unintended modifications to data and promotes safer coding practices."
+            }
+        ],
+        "answer": "The 'const' qualifier is used to indicate that a variable is read-only and cannot be modified after its initial assignment. It is often applied to function parameters to ensure that the function does not modify them. Using 'const' helps prevent unintended modifications to data and promotes safer coding practices.",
+        "score": 4
+    },
+    {
+        "id": 17,
+        "task": "Rate the answer to the question.",
+        "question": "What is a pointer in C++?",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "A pointer in C++ is a variable that stores the memory address of another variable."
+            },
+            {
+                "point": 2,
+                "criteria": "Pointers are often used for dynamic memory allocation and manipulation."
+            },
+            {
+                "point": 2,
+                "criteria": "Properly managing pointers is essential to prevent memory leaks and undefined behavior."
+            }
+        ],
+        "answer": "A pointer in C++ is a variable that stores the memory address of another variable. Pointers are often used for dynamic memory allocation and manipulation.",
+        "score": 4
+    },
+    {
+        "id": 18,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'this' pointer in C++?",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'this' pointer is a pointer that points to the current instance of a class or object."
+            },
+            {
+                "point": 2,
+                "criteria": "It is often used to distinguish between class members and function parameters with the same name."
+            }
+        ],
+        "answer": "The 'this' pointer is a pointer that points to the current instance of a class or object.",
+        "score": 2
+    },
+    {
+        "id": 19,
+        "task": "Rate the answer to the question.",
+        "question": "What is the role of the 'static' keyword in C++?",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'static' keyword is used to declare class-level variables and methods, which are shared among all instances of the class."
+            },
+            {
+                "point": 2,
+                "criteria": "Static variables persist across multiple function or method calls and retain their values between invocations."
+            },
+            {
+                "point": 2,
+                "criteria": "Static methods can be called without creating an instance of the class."
+            }
+        ],
+        "answer": "The 'static' keyword is used to declare class-level variables and methods, which are shared among all instances of the class. Static methods can be called without creating an instance of the class.",
+        "score": 4
+    },
+    {
+        "id": 20,
+        "task": "Rate the answer to the question.",
+        "question": "What is operator overloading in C++?",
+        "maximum_score": 8,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "Operator overloading is a feature in C++ that allows you to redefine the behavior of operators for user-defined types."
+            },
+            {
+                "point": 2,
+                "criteria": "It is achieved by defining special member functions, such as '+' for addition, with custom implementations for your classes."
+            },
+            {
+                "point": 2,
+                "criteria": "Operator overloading enables more natural and intuitive usage of operators with user-defined objects."
+            },
+            {
+                "point": 2,
+                "criteria": "However, it should be used judiciously to maintain code readability."
+            }
+        ],
+        "answer": "Operator overloading is a feature in C++ that allows you to redefine the behavior of operators for user-defined types. It is achieved by defining special member functions, such as '+' for addition, with custom implementations for your classes. Operator overloading enables more natural and intuitive usage of operators with user-defined objects. However, it should be used judiciously to maintain code readability.",
+        "score": 7
+    },
+    {
+        "id": 21,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the role of the 'break' statement in C++ loops.",
+        "maximum_score": 4,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'break' statement is used in C++ loops to prematurely exit the loop, regardless of the loop's termination condition."
+            },
+            {
+                "point": 2,
+                "criteria": "It is often used to handle specific exit conditions or to terminate a loop when a certain condition is met."
+            }
+        ],
+        "answer": "It is often used to handle specific exit conditions or to terminate a loop when a certain condition is met.",
+        "score": 2
+    },
+    {
+        "id": 22,
+        "task": "Rate the answer to the question.",
         "question": "Explain the difference between malloc() and new in C++.",
         "maximum_score": 6,
         "scoring_guide":[
@@ -92,7 +484,7 @@
 
     },
     {
-        "id": 5,
+        "id": 23,
         "task": "Rate the answer to the question.",
         "question": "What is the purpose of the 'const' keyword in C++? Provide examples.",
         "maximum_score": 3,
@@ -111,7 +503,7 @@
 
     },
     {
-        "id": 6,
+        "id": 24,
         "task": "Rate the answer to the question.",
         "question": "What is the purpose of the 'const' keyword in C++? Provide examples.",
         "maximum_score": 3,
@@ -128,5 +520,77 @@
         "answer": "The 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized. For instance, const int x = 5; declares a constant integer 'x' with the value 5. You cannot change the value of 'x' later in the program. It is often used to create immutable data or to ensure that function parameters do not get modified.",
         "score": 2
 
+    },
+    {
+        "id": 25,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'const' keyword in C++? Provide examples.",
+        "maximum_score": 3,
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "The 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized."
+            },
+            {
+                "point": 1,
+                "criteria": "Example"
+            }
+        ],
+        "answer": "The 'const' keyword indicates that a variable has a global scope.",
+        "score": 0
+
+    },
+    {
+        "id": 26,
+        "task": "Rate the answer to the question.",
+        "question": "What is the purpose of the 'try-catch' block in C++?",
+        "maximum_score": 6,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'try-catch' block is used in C++ for exception handling."
+            },
+            {
+                "point": 2,
+                "criteria": "In a 'try' block, you write code that might throw an exception, and in the 'catch' block, you specify how to handle the exception."
+            },
+            {
+                "point": 2,
+                "criteria": "Exception handling helps make code more robust by gracefully handling errors and preventing program crashes."
+            }
+        ],
+        "answer": "The try-catch block is created to handle every mistake in the code.",
+        "score": 0
+    },
+    {
+        "id": 27,
+        "task": "Rate the answer to the question.",
+        "question": "Explain the concept of inheritance in C++.",
+        "maximum_score": 8,
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "Inheritance is a fundamental concept in C++ that allows a class to inherit attributes and methods from another class."
+            },
+            {
+                "point": 2,
+                "criteria": "The class that inherits from another is called a derived class or subclass, while the class being inherited from is called the base class or superclass."
+            },
+            {
+                "point": 2,
+                "criteria": "Inheritance promotes code reuse, as derived classes can access the members of the base class and extend or override them."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ supports multiple inheritance, where a class can inherit from more than one base class."
+            }
+        ],
+        "answer": "inheritance helps to keep the C++ code DRY 'Don't Repeat Yourself', and makes the code easier to maintain, modify and debug",
+        "score": 2
     }
 ]
+
+
+
+
+

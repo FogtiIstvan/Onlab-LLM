@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "task": "Explain the difference between malloc() and new in C++.",
+        "scoring_guide":"The following thoughts are worth 2 points each, if they are fully included in the response; if only partially or not included, they are worth 0 points: malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete. new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "answer": "I don't know",
+        "assessment": "0 points given altogether - The answer does not explain that malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically (0). The answer does not explain that memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete (0). The answer does not explain that new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting (0)."
+
+    },
+    {
+        "id": 2,
+        "task": "Explain the difference between malloc() and new in C++.",
+        "scoring_guide":"The following thoughts are worth 2 points each, if they are fully included in the response; if only partially or not included, they are worth 0 points: malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete. new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "answer": "After calling malloc(), free() must be also called. malloc() returns a void pointer, that requires explicit type casting. new is type-safe.",
+        "assessment": "2 points given altogether - The answer does not explain that malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically (0). The answer explains partially that memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete (0). The answer explains fully that new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting (2)."
+
+    },
+    {
+        "id": 3,
+        "task": "Explain the difference between malloc() and new in C++.",
+        "scoring_guide":"The following thoughts are worth 2 points each, if they are fully included in the response; if only partially or not included, they are worth 0 points: malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete. new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "answer": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. Additionally, new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "assessment": "4 points given altogether - The answer explains fully that malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically (2). The answer does not explain that memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete (0). The answer explains fully that new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting (2)."
+
+    },
+    {
+        "id": 4,
+        "task": "Explain the difference between malloc() and new in C++.",
+        "scoring_guide":"The following thoughts are worth 2 points each, if they are fully included in the response; if only partially or not included, they are worth 0 points: malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete. new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "answer": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically. new not only allocates memory but also calls the constructor for an object. Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete. Additionally, new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting.",
+        "assessment": "6 points given altogether - The answer explains fully that malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically (2). The answer explains fully that memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete(2). The answer explains fully that new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting (2)."
+    },
+    {
+        "id": 5,
+        "task": "What is the purpose of the 'const' keyword in C++? Provide examples.",
+        "scoring_guide":"Give 2 points if the answer fully includes that the 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized. Give 1 point if a correct example is given in the answer",
+        "answer": "'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized.",
+        "assessment": "2 points given altogether - The answer explains fully that the 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized (2). The answer does not provide any example (0)."
+
+    },
+    {
+        "id": 6,
+        "task": "What is the purpose of the 'const' keyword in C++? Provide examples.",
+        "scoring_guide":"Give 2 points if the answer fully includes that the 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized. Give 1 point if a correct example is given in the answer",
+        "answer": "I don’t know",
+        "assessment": "0 points given altogether - The answer does not explain that the 'const' keyword in C++ is used to indicate that a variable's value cannot be modified after it is initialized (0). The answer does not provide any example (0)." 
+
+    },
+    {
+        "id": 7,
+        "task": "Explain the concept of inheritance in C++.",
+        "scoring_guide": "Give 2 points if the answer fully includes that inheritance in C++ is a mechanism that allows a class to inherit properties and behaviors from another class. Give 1 point if an example is provided in the answer.",
+        "answer": "Inheritance in C++ is when a class inherits properties and behaviors from another class. For example, a 'Car' class can inherit from a 'Vehicle' class to reuse the 'speed' and 'accelerate' methods.",
+        "assessment": "2 points given altogether - The answer fully explains that inheritance in C++ allows a class to inherit properties and behaviors from another class (2). The answer provides a relevant example (1)."
+    },
+    {
+        "id": 8,
+        "task": "Describe the difference between pass-by-value and pass-by-reference in C++.",
+        "scoring_guide": "Give 2 points if the answer fully includes that pass-by-value involves making a copy of the argument, while pass-by-reference allows the function to modify the original argument. Give 1 point for each concept included in the answer.",
+        "answer": "Pass-by-value involves making a copy of the argument, while pass-by-reference allows the function to modify the original argument.",
+        "assessment": "2 points given altogether - The answer fully explains that pass-by-value involves making a copy of the argument, while pass-by-reference allows the function to modify the original argument (2). The answer does not provide any examples (0)."
+    },
+    {
+        "id": 9,
+        "task": "What is operator overloading in C++?",
+        "scoring_guide": "Give 2 points if the answer fully includes that operator overloading in C++ allows you to define how operators behave when used with objects of a class. Give 1 point if an example is provided in the answer.",
+        "answer": "Operator overloading in C++ allows you to define how operators behave when used with objects of a class. For instance, you can define how the '+' operator works for your custom 'ComplexNumber' class.",
+        "assessment": "2 points given altogether - The answer fully explains that operator overloading in C++ allows you to define how operators behave when used with objects of a class (2). The answer provides a relevant example (1)."
+    },
+    {
+        "id": 10,
+        "task": "What is a constructor in C++ and how does it differ from a regular member function?",
+        "scoring_guide": "Give 2 points if the answer fully includes that a constructor in C++ is a special member function used for initializing objects, and it doesn't have a return type or return statement. Give 1 point if the answer mentions the absence of a return type or return statement.",
+        "answer": "A constructor in C++ is a special member function used for initializing objects. It differs from a regular member function in that it doesn't have a return type or a return statement.",
+        "assessment": "2 points given altogether - The answer fully explains that a constructor in C++ is a special member function used for initializing objects and does not have a return type or return statement (2). The answer does not provide any examples (0)."
+    },
+    {
+        "id": 11,
+        "task": "Explain the role of the 'virtual' keyword in C++ and its use in polymorphism.",
+        "scoring_guide": "Give 2 points if the answer fully includes that the 'virtual' keyword is used to declare a function as virtual in a base class, allowing it to be overridden in derived classes for polymorphic behavior. Give 1 point if an example is provided in the answer.",
+        "answer": "The 'virtual' keyword in C++ is used to declare a function as virtual in a base class, allowing it to be overridden in derived classes for polymorphic behavior. For example, you can have a 'Shape' base class with a 'calculateArea' method marked as virtual, and then derived classes like 'Circle' and 'Rectangle' can override this method to provide their own implementations.",
+        "assessment": "2 points given altogether - The answer fully explains that the 'virtual' keyword is used to declare a function as virtual in a base class for polymorphic behavior (2). The answer provides a relevant example (1)."
+    },
+    {
+        "id": 12,
+        "task": "Explain the concept of operator overloading in C++.",
+        "scoring_guide": "Give 2 points if the answer fully includes that operator overloading in C++ allows operators to be redefined for user-defined data types. Give 1 point if an example is provided.",
+        "answer": "Operator overloading in C++ allows operators to be redefined for user-defined data types.",
+        "assessment": "2 points given altogether - The answer explains fully that operator overloading in C++ allows operators to be redefined for user-defined data types (2). The answer does not provide an example (0)."
+    },
+    {
+        "id": 13,
+        "task": "What is a reference in C++? How is it different from a pointer?",
+        "scoring_guide": "Give 2 points if the answer fully includes that a reference in C++ is an alias for an existing variable, and it cannot be null or changed to refer to a different variable. Give 1 point if the answer explains the difference from a pointer.",
+        "answer": "A reference in C++ is an alias for an existing variable. It is like a pointer but cannot be null or changed to refer to a different variable.",
+        "assessment": "3 points given altogether - The answer explains fully that a reference in C++ is an alias for an existing variable and cannot be null or changed to refer to a different variable (2). The answer partially explains the difference from a pointer (1)."
+    },
+    {
+        "id": 14,
+        "task": "What is the purpose of the 'virtual' keyword in C++ when used with functions?",
+        "scoring_guide": "Give 2 points if the answer fully includes that the 'virtual' keyword in C++ is used to enable polymorphism and dynamic binding. Give 1 point if an example is provided.",
+        "answer": "The 'virtual' keyword in C++ is used to enable polymorphism and dynamic binding.",
+        "assessment": "2 points given altogether - The answer explains fully that the 'virtual' keyword in C++ is used to enable polymorphism and dynamic binding (2). The answer does not provide an example (0)."
+    },
+    {
+        "id": 15,
+        "task": "Explain the concept of inheritance in C++. Provide an example of single inheritance.",
+        "scoring_guide": "Give 2 points if the answer fully includes that inheritance in C++ allows a class to inherit the properties and behaviors of another class. Give 1 point if a correct example of single inheritance is provided.",
+        "answer": "Inheritance in C++ allows a class to inherit the properties and behaviors of another class. For example, consider a base class 'Shape' and a derived class 'Circle' that inherits from 'Shape'.",
+        "assessment": "3 points given altogether - The answer explains fully that inheritance in C++ allows a class to inherit the properties and behaviors of another class (2). The answer provides a correct example of single inheritance (1)."
+    }
+]

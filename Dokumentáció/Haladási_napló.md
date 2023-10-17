@@ -107,3 +107,18 @@ Több próbálkozás, és hibaüzenet után idáig jutottam el, azonban ennél m
 Ebben a fájlban találhatók az ehhez kapcsolódó próbálkozásaim, ami szintén nem járt sikerrel. Valamilyen oknál fogva
 a google colab mindig úgy döntött, hogy összeomlik trainelésnél, még akkor is, ha csak a base modellel próbálkoztam.
 
+## Hatodik hét
+
+Az előző hét folyamán igyekeztem végre sikeresen peft fine-tuneolni a flan-t5-ös modelleket, ami váratlan módon minden
+módosítás nélkül egyből sikerült. Erre nem nagyon találtam magyarázatot.
+
+Ezután sokat játszadoztam a training paraméterekkel, illetve chatgpt-vel felduzzasztottam a data.json fájlt ehhez.
+Kis tesztelgetés után arra kellett rájönnöm, hogy nem igazán fejlődik a modell. Akárhogy fine-tuneoltam, annak ellenére, hogy csak
+pontoznia kellett a modellnek a válaszokat a "scoring guide" alapján, nem igazán érződött a fejlődés.
+Végülis utánanéztem más dataseteknek, mit tudnék a promptomon csiszolni, és így létrejött egy második formátum is. 
+Illetve most már próbáltam a megbeszélteknek megfelelően úgy alakítani a promptot, hogy a végeredmény a pontszámon felül egy szöveges értékelést is tartalmazzon.
+Na ez az új verzió chatgptve nagyon jól működött, azonban a flan-t5el ismét csak nem jutottam túl sokra.
+
+Végső soron a többi datasetet elnézve felmerült bennem a kérdés, hogy nem túl komplex-e egy ilyen feladat egy flan-t5 számára.
+Múlt héten meg ezen a héten elég sokat próbálkoztam vele, és kezd gyanús lenni, hogy érdemes lenne átállni az openAI API-jára...
+
