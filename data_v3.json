@@ -1,0 +1,42 @@
+[
+    {
+        "criteria" : "Memory allocated with malloc() must be explicitly deallocated with free().",
+        "answer" : "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete.",
+        "label" : "true"
+    },
+    {
+        "criteria" : "Memory allocated with free must be explicitly deallocated with delete.",
+        "answer" : "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete.",
+        "label" : "true"
+    },
+    {
+        "criteria" : "new is an operator in C++",
+        "answer" : "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete.",
+        "label" : "false"
+    },
+    {
+        "criteria" : "malloc is a function in C",
+        "answer" : "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete.",
+        "label" : "false"
+    },
+    {
+        "criteria" : "The Single Responsibility Principle",
+        "answer" : "The Single Responsibility Principle, the Open-Closed Principle, the Liskov Substitution Principle, the Interface Segregation Principle, the Dependency Inversion Principle",
+        "label" : "true"
+    },
+    {
+        "criteria" : "Encapsulation",
+        "answer" : "The Single Responsibility Principle, the Open-Closed Principle, the Liskov Substitution Principle, the Interface Segregation Principle, the Dependency Inversion Principle",
+        "label" : "false"
+    },
+    {
+        "criteria" : "A pointer stores the memory adress of a variable.",
+        "answer" : "A pointer in C++ is a variable that holds the memory address of another variable. It allows you to indirectly access the value of the variable it points to. Here's an example",
+        "label" : "true"
+    },
+    {
+        "criteria" : "A pointer can be dereferenced with '&'",
+        "answer" : "A pointer in C++ is a variable that holds the memory address of another variable. It allows you to indirectly access the value of the variable it points to. Here's an example",
+        "label" : "false"
+    }
+]
