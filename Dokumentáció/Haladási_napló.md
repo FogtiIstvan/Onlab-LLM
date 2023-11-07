@@ -122,3 +122,17 @@ Na ez az új verzió chatgptve nagyon jól működött, azonban a flan-t5el ism�
 Végső soron a többi datasetet elnézve felmerült bennem a kérdés, hogy nem túl komplex-e egy ilyen feladat egy flan-t5 számára.
 Múlt héten meg ezen a héten elég sokat próbálkoztam vele, és kezd gyanús lenni, hogy érdemes lenne átállni az openAI API-jára...
 
+
+## Tizedik hét
+
+Miután a Flan-T5-XL modelljét nem tudtam fine-tuneolni, az elmúlt két hétben elkezdtem kicsit más irányba tapogatózni.
+Jobban beleástam magam a LangChain működésébe, és elkezdett gyanús lenni számomra, hogy valahogy az embeddingek irányába kellene  a későbbiekben továbbhaladnom. Eddig promptokkal próbáltam eldöntetni az LLM-ekkel, hogy egy adott kritérium szerepel-e a válaszokban, azonban találtam modelleket, amik kifejezetten mondatok/szövegek szemantikai összehasonlítására vannak kitalálva.
+
+Így került a kezeim közé a SentenceTransformers framework, annak "all-mpnet-base-v2" modellje, amely teljesen szabadon felhasználható, kicsi, gyors, fent van a huggingfacen, és meglehetősen pontosan működik. A data_v3-ban található tesztadatokkal jelenleg 83.3%-os pontosságot értem el, ez elég jelentős javulás az eddigiekhez képest. A HF_Sentencetransformer.ipynb fájlban találhatóak a próbálkozásaim.
+
+Jelenleg úgy képzelem el az alkalmazást, hogy a tanár által létrehozott tesztfeladatok, illetve a hozzájuk tartozó javítási útmutatók 
+elmentődnek valamilyen formátumban a szerveren id-vel, így javításnál könnyedén lekérdezhetők lesznek a kritériumok, nem kell vectore storet használni.
+
+Amivel még nem sokat foglalkoztam az a kódok ellenőrzése. Ennek megoldására is egy "Sentence similarity" modellt képzelek el, amelyet már találtam is néhányat, csak a C++ nyelvet ismerőből van hiány. Azonban ha minden igaz ez a szöveges válaszok ellenőrzéséhez elég hasonlóan működhet majd.
+
+Emmellett elvégeztem két gyorstalpaló kurzust a moodle academy oldalán, így plugin fejlesztésben is történtek előrelépések.

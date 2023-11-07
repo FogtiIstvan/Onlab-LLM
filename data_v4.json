@@ -1,0 +1,61 @@
+[
+    {
+        "id": "1",
+        "task": "Explain the difference between malloc() and new in C++. ",
+        "scoring_guide":[
+            {
+                "point": 2,
+                "criteria": "malloc() is a C function used for dynamic memory allocation, while new is a C++ operator that also allocates memory dynamically."
+            },
+            {
+                "point": 2,
+                "criteria": "Memory allocated with malloc() must be explicitly deallocated with free(), whereas memory allocated with new should be deallocated with delete."
+            },
+            {
+                "point": 2,
+                "criteria": "new is type-safe, whereas malloc() returns a void pointer, requiring explicit type casting."
+            }
+        ]
+
+    },
+    {
+        "id": "2",
+        "task": "Explain the concept of inheritance in C++.",
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "Inheritance is a fundamental concept in C++ that allows a class to inherit attributes and methods from another class."
+            },
+            {
+                "point": 2,
+                "criteria": "The class that inherits from another is called a derived class or subclass, while the class being inherited from is called the base class or superclass."
+            },
+            {
+                "point": 2,
+                "criteria": "Inheritance promotes code reuse, as derived classes can access the members of the base class and extend or override them."
+            },
+            {
+                "point": 2,
+                "criteria": "C++ supports multiple inheritance, where a class can inherit from more than one base class."
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "task": "What is the purpose of the 'try-catch' block in C++?",
+        "scoring_guide": [
+            {
+                "point": 2,
+                "criteria": "The 'try-catch' block is used in C++ for exception handling."
+            },
+            {
+                "point": 2,
+                "criteria": "In a 'try' block, you write code that might throw an exception, and in the 'catch' block, you specify how to handle the exception."
+            },
+            {
+                "point": 2,
+                "criteria": "Exception handling helps make code more robust by gracefully handling errors and preventing program crashes."
+            }
+        ]
+    }
+]
