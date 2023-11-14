@@ -1,5 +1,0 @@
-Mysql get-started: https://ubuntu.com/server/docs/databases-mysql
-
-nginx get-started: https://ubuntu.com/tutorials/install-and-configure-nginx#2-installing-nginx
-
-setting-up vscode for php developement for moodle: https://docs.moodle.org/dev/Setting_up_VSCode

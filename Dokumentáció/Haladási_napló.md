@@ -136,3 +136,9 @@ elmentődnek valamilyen formátumban a szerveren id-vel, így javításnál kön
 Amivel még nem sokat foglalkoztam az a kódok ellenőrzése. Ennek megoldására is egy "Sentence similarity" modellt képzelek el, amelyet már találtam is néhányat, csak a C++ nyelvet ismerőből van hiány. Azonban ha minden igaz ez a szöveges válaszok ellenőrzéséhez elég hasonlóan működhet majd.
 
 Emmellett elvégeztem két gyorstalpaló kurzust a moodle academy oldalán, így plugin fejlesztésben is történtek előrelépések.
+
+## Tizenegyedik hét
+
+A héten leginkább a moodle plugin fejlesztésével foglalkoztam, amivel egész jól haladtam, azonban beleütköztem néhány nehézségbe. Jelenleg ott tartok, hogy felhasználóként értem hogyan működnek az egyes quizek, és van egy elképzelésem, hogy hogyan is illeszkedik majd a kész rendszerbe az én pluginom. 
+
+A legjobb megoldásnak az tűnik, ha átírom a quiz activityt, aminek azonban hiányzik a dokumentációja a moodle oldaláról. Ezt még nem tudom pontosan hogyan fogom kikerülni, azonban az egyes APIkkal már sokat kísérleteztem. Alapvetően az elején ijesztőnek tűnt számomra az egész rendszer, és bár még a tényleges kódnak nem láttam neki, a héten nagyon sokat tisztult számomra mit és hogyan kell majd csinálnom.
