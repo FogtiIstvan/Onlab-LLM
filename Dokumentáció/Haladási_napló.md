@@ -142,3 +142,14 @@ Emmellett elvégeztem két gyorstalpaló kurzust a moodle academy oldalán, így
 A héten leginkább a moodle plugin fejlesztésével foglalkoztam, amivel egész jól haladtam, azonban beleütköztem néhány nehézségbe. Jelenleg ott tartok, hogy felhasználóként értem hogyan működnek az egyes quizek, és van egy elképzelésem, hogy hogyan is illeszkedik majd a kész rendszerbe az én pluginom. 
 
 A legjobb megoldásnak az tűnik, ha átírom a quiz activityt, aminek azonban hiányzik a dokumentációja a moodle oldaláról. Ezt még nem tudom pontosan hogyan fogom kikerülni, azonban az egyes APIkkal már sokat kísérleteztem. Alapvetően az elején ijesztőnek tűnt számomra az egész rendszer, és bár még a tényleges kódnak nem láttam neki, a héten nagyon sokat tisztult számomra mit és hogyan kell majd csinálnom.
+
+
+## Tizenkettedik hét
+
+## Tizenharmadik hét
+
+Ezen a héten alapvetően a program moodlebe való integrálásán dolgoztam.
+A tanár a zh értékelése során amikor egy válasz kísérlet kommentálására megy, a megjelenő ablakban automatikusan kitöltődik a komment fül
+a hiányzó gondolatok megjelölésével, és ez alapján a pontszám is becslésre kerül. Amennyiben a javító a mentés gombra megy, az értékelés mentésre kerül. Ellenkező esetben nem mentődik el semmi, és az ablak újranyitásánál a program ismételten átnézi a választ, és értékel.
+
+A működéshez belenyúltam a php kódba, amely így a review ablak megnyitásánál egy kérést intéz a docker konténerben futó backendhez, amely egy a pontszámot, és a kommentet tartalmazó tömbbel tér vissza. A konténer paraméterként a választ, és az értékelési útmutatót kapja meg, amelyeken koszinuszos összehasonlítást végez a sentencetransformers könyvtár segítségével. Az értékelés pontosságával még nem igazán vagyok elégedett, utolsó héten még legfőbbképpen ezen fogok dolgozni. 
