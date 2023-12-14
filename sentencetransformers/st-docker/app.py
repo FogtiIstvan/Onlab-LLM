@@ -8,7 +8,7 @@ model = SentenceTransformer("/app/model")
 score = 0
 
 @app.route('/', methods=['POST'])
-def hello_world():
+def rootfunction():
     global model
     global score
 
@@ -62,44 +62,42 @@ def delete_html_tags(text):
 
 def evaluate(criterias, answer):
     global score
-    print("in evaluate")
     answer_chunks = split_into_clauses(answer)
     answer_chunks.append(answer)
-    answer_embedding = model.encode(answer_chunks, convert_to_tensor=True)
-
+    answer_embeddings = model.encode(answer_chunks, convert_to_tensor=True)
     missing_information = []
 
-    print(criterias)
     for criteria in criterias:
         contains = False
-        print("========================================================")
-        print("=====================comparison=========================")
-        print("possible points: " + str(criteria[0]))
-        #criteria_chunks = split_into_sentences(criteria[1])
-        print("criteria_chunks: " + str(criteria[1]))
-        print("answer_chunks: " + str(answer_chunks))
-        criteria_embedding = model.encode(criteria[1], convert_to_tensor=True)
+        criteria_clauses = split_into_clauses(criteria[1])
+        cosine_scores = util.cos_sim(criteria_embedding, answer_embeddings)
 
-        cosine_scores = util.cos_sim(criteria_embedding, answer_embedding)
-        print("cosine_scores: " + str(cosine_scores))
+        numofclauses = len(criteria_clauses)
+        NumOfCorrectClauses = 0   
+        for crit_clause in criteria_clauses:
+            criteria_embedding = model.encode(crit_clause, convert_to_tensor=True)
+            euclidean_dist_arr = []
 
-        for cos in cosine_scores:
-            for c in cos:
-                if c > 0.79:
-                    contains = True
-                    if score == -1:
-                        score = 0
+            for ans in answer_embeddings:
+                crit_arr = criteria_embedding.cpu().numpy()
+                answ_arr = ans.cpu().numpy()
+                dist = answ_arr - crit_arr
+                euclidean_dist_arr.append(np.linalg.norm(dist))
+
+            for cos in cosine_scores:
+                for c in cos:
+                    if c > 0.79:
+                        for dist in euclidean_dist_arr:
+                            if dist < 0.51:
+                                NumOfCorrectClauses += 1
+                                break
         
-        if contains:
-            print("contains")
+        if numofclauses == NumOfCorrectClauses:
             score += int(criteria[0])
-            print("score: " + str(score))
         else:
             missing_information.append(str(criteria[1]))
 
-    
-    print("answer score: " + str(score))
-    return [score, missing_information]
+        return [score, missing_information]
 
 
 def split_into_sentences(text):
@@ -130,3 +128,4 @@ def create_comment(missing_content):
         comment += newpoint
 
     return comment
+
